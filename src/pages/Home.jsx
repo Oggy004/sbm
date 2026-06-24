@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HardHat, Wrench, Zap, ShieldAlert, ArrowRight, CheckCircle2, ChevronRight, Phone, MessageSquare, Mail, Award, X, ZoomIn, ChevronLeft } from 'lucide-react';
+import { HardHat, Wrench, Zap, ShieldAlert, ArrowRight, CheckCircle2, ChevronRight, Phone, MessageSquare, Mail, Award, X, ZoomIn, ChevronLeft, Brush, Users, Bus, Package, Hotel, Truck } from 'lucide-react';
 import AnimatedCounter from '../components/AnimatedCounter';
+import clientsImg from '../assets/clients.jpeg';
 import { 
   workforceCategories, 
   industriesSupported, 
@@ -91,11 +92,11 @@ export default function Home() {
             </h1>
             
             <h2 className="font-dmsans font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-widest uppercase opacity-95">
-              SKILLED MANPOWER SOLUTIONS
+              INDUSTRIAL & PROJECT CONTRACTING
             </h2>
             
             <p className="text-base sm:text-lg text-white font-dmsans tracking-wide max-w-2xl mx-auto opacity-90">
-              Delivering Workforce Solutions—Anytime, Anywhere
+              Delivering Trustable Project Solutions—Anytime, Anywhere
             </p>
 
             <div className="pt-8 flex justify-center">
@@ -118,7 +119,7 @@ export default function Home() {
             <div className="lg:col-span-6 relative">
               <div className="aspect-[4/3] bg-navy-light rounded-sm overflow-hidden border border-slate-800">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80" 
+                  src={clientsImg} 
                   alt="SBM Construction Project" 
                   className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-all duration-700"
                 />
@@ -138,13 +139,13 @@ export default function Home() {
                 <span>Who We Are</span>
               </span>
               <h2 className="font-barlow font-black text-4xl sm:text-5xl text-white uppercase tracking-tight leading-none">
-                Delivering Reliable & Skilled Manpower Solutions
+                Delivering Reliable & Skilled Contracting Solutions
               </h2>
               <p className="text-slate-300 leading-relaxed">
-                At SBM Contracting Company, we specialize in bridging the gap between major projects and qualified professionals. We understand that success relies heavily on workforce reliability and capability.
+                At SBM Contracting Company, we specialize in executing complex civil structural, mechanical, and industrial contracting projects. We understand that project success relies heavily on absolute precision, strict compliance, and expert management. We have worked with many big companies in Dubai, providing high-quality project execution and compliant logistics.
               </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Our strict mobilization procedures ensure every single builder, mason, fitter, welder, and safety officer meets the certifications and field-tested standard required on heavy-duty sites. We handle the management and recruitment headaches so you can focus on building.
+                Our structured execution model ensures every phase of the project meets industrial standards, strict safety requirements, and global compliance benchmarks. We manage engineering logistics, safety audits, and full-scale execution so your project is delivered on time.
               </p>
               
               <div className="pt-4 flex flex-col sm:flex-row gap-6">
@@ -178,69 +179,76 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* WORKFORCE CATEGORIES PREVIEW */}
-      <section className="py-24 bg-navy-dark border-t border-slate-900">
+      {/* CORE CONTRACTING SERVICES & SPECIALIZATIONS */}
+      <section className="py-24 bg-navy border-t border-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-gold text-xs font-black uppercase tracking-widest flex items-center justify-center space-x-2">
-              <span className="w-6 h-[1px] bg-gold" />
-              <span>Specialized Trades</span>
-              <span className="w-6 h-[1px] bg-gold" />
+            <span className="text-[#d97736] text-xs font-black uppercase tracking-widest flex items-center justify-center space-x-2">
+              <span className="w-6 h-[1px] bg-[#d97736]" />
+              <span>Our Capabilities</span>
+              <span className="w-6 h-[1px] bg-[#d97736]" />
             </span>
             <h2 className="font-barlow font-black text-4xl sm:text-5xl text-white uppercase tracking-tight">
-              Our Workforce Categories
+              Our Core Contracting Services
             </h2>
-            <p className="text-slate-400 text-sm">
-              We mobilize fully qualified personnel equipped with trade certifications and site experience.
+            <p className="text-slate-400 text-sm max-w-2xl mx-auto leading-relaxed">
+              SBM Contracting Company delivers professional end-to-end execution of civil construction, mechanical fit-outs, industrial electrical projects, and HSE safety management.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {workforceCategories.map((category) => {
-              const IconComponent = iconMap[category.icon] || HardHat;
-              return (
-                <div 
-                  key={category.id} 
-                  className="bg-navy border border-slate-800 hover:border-gold transition-all duration-300 p-8 flex flex-col justify-between group"
-                >
-                  <div>
-                    {/* Icon Container */}
-                    <div className="w-12 h-12 bg-gold/10 border border-gold/30 rounded-sm flex items-center justify-center text-gold mb-6 group-hover:bg-gold group-hover:text-navy transition-all duration-300">
-                      <IconComponent size={24} />
-                    </div>
-                    <h3 className="font-barlow font-bold text-2xl text-white uppercase tracking-wide mb-3">
-                      {category.title}
-                    </h3>
-                    <p className="text-xs text-slate-400 leading-relaxed mb-6">
-                      {category.description}
-                    </p>
-                  </div>
-                  <div>
-                    <ul className="border-t border-slate-800/80 pt-4 space-y-2 mb-6 text-xs text-slate-300">
-                      {category.trades.slice(0, 3).map((trade, idx) => (
-                        <li key={idx} className="flex items-center">
-                          <span className="text-gold mr-2">•</span> {trade.name}
-                        </li>
-                      ))}
-                      {category.trades.length > 3 && (
-                        <li className="text-slate-500 italic pl-3">
-                          + {category.trades.length - 3} more trades
-                        </li>
-                      )}
-                    </ul>
-                    <Link 
-                      to="/services" 
-                      className="text-xs font-bold text-gold uppercase tracking-wider flex items-center hover:text-gold-light"
-                    >
-                      <span>View Details</span>
-                      <ChevronRight size={14} className="ml-0.5" />
-                    </Link>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Card 1: Construction Contracting */}
+            <div className="bg-navy-dark border border-slate-800 p-8 flex flex-col items-center text-center rounded-2xl hover:border-[#d97736] hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/45 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-orange-500/10 border border-orange-500/30 rounded-full flex items-center justify-center text-[#d97736] mb-6 group-hover:bg-[#d97736] group-hover:text-white transition-all duration-300">
+                <HardHat size={32} />
+              </div>
+              <h3 className="font-dmsans font-bold text-lg text-white mb-3 group-hover:text-[#d97736] transition-colors duration-300">
+                Construction Contracting
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                Comprehensive structural works, civil engineering, formwork, and scaffolding services for major global contracting projects.
+              </p>
+            </div>
+
+            {/* Card 2: Mechanical Contracting */}
+            <div className="bg-navy-dark border border-slate-800 p-8 flex flex-col items-center text-center rounded-2xl hover:border-[#d97736] hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/45 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-orange-500/10 border border-orange-500/30 rounded-full flex items-center justify-center text-[#d97736] mb-6 group-hover:bg-[#d97736] group-hover:text-white transition-all duration-300">
+                <Wrench size={32} />
+              </div>
+              <h3 className="font-dmsans font-bold text-lg text-white mb-3 group-hover:text-[#d97736] transition-colors duration-300">
+                Mechanical Contracting
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                High-precision mechanical installations, fabrication, pressure vessel welding, and pipeline fitting for industrial complexes.
+              </p>
+            </div>
+
+            {/* Card 3: Electrical Contracting */}
+            <div className="bg-navy-dark border border-slate-800 p-8 flex flex-col items-center text-center rounded-2xl hover:border-[#d97736] hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/45 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-orange-500/10 border border-orange-500/30 rounded-full flex items-center justify-center text-[#d97736] mb-6 group-hover:bg-[#d97736] group-hover:text-white transition-all duration-300">
+                <Zap size={32} />
+              </div>
+              <h3 className="font-dmsans font-bold text-lg text-white mb-3 group-hover:text-[#d97736] transition-colors duration-300">
+                Electrical Contracting
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                Industrial cabling, power grid control panel assembly, PLC automation systems, and electrical maintenance services.
+              </p>
+            </div>
+
+            {/* Card 4: Safety & HSE Services */}
+            <div className="bg-navy-dark border border-slate-800 p-8 flex flex-col items-center text-center rounded-2xl hover:border-[#d97736] hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/45 transition-all duration-300 group">
+              <div className="w-16 h-16 bg-orange-500/10 border border-orange-500/30 rounded-full flex items-center justify-center text-[#d97736] mb-6 group-hover:bg-[#d97736] group-hover:text-white transition-all duration-300">
+                <ShieldAlert size={32} />
+              </div>
+              <h3 className="font-dmsans font-bold text-lg text-white mb-3 group-hover:text-[#d97736] transition-colors duration-300">
+                Safety & HSE Services
+              </h3>
+              <p className="text-sm text-slate-400 leading-relaxed">
+                Certified HSE compliance auditing, risk assessments, fire protection system setups, and site safety management.
+              </p>
+            </div>
           </div>
 
         </div>
@@ -405,7 +413,7 @@ export default function Home() {
       </section>
 
       {/* HIGHLIGHTS / BANNER */}
-      <section className="bg-gradient-to-r from-gold via-gold-light to-gold py-16 text-navy border-y border-gold-light/20 relative">
+      <section className="bg-gradient-to-r from-gold via-gold-light to-gold py-16 text-slate-950 border-y border-gold-light/20 relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
@@ -434,10 +442,10 @@ export default function Home() {
                   <span>Get In Touch</span>
                 </span>
                 <h2 className="font-barlow font-black text-4xl sm:text-5xl text-white uppercase tracking-tight">
-                  Request Skilled Manpower
+                  Inquire About Project Contracting
                 </h2>
                 <p className="text-slate-400 text-sm">
-                  Let us know your resource requirements, project timelines, and skill specifications. Our team will contact you within 24 hours.
+                  Let us know your project specifications, engineering blueprints, and timelines. Our contracting team will review and get back to you within 24 hours.
                 </p>
               </div>
 
@@ -504,7 +512,7 @@ export default function Home() {
                     Thank You!
                   </h3>
                   <p className="text-slate-300 text-sm max-w-sm">
-                    Your inquiry has been successfully sent. An SBM recruitment manager will review your trade needs and call you shortly.
+                    Your inquiry has been successfully sent. An SBM project director will review your technical requirements and contact you shortly.
                   </p>
                   <button 
                     onClick={() => setFormSubmitted(false)}
@@ -572,7 +580,7 @@ export default function Home() {
 
                   <div>
                     <label htmlFor="message" className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-                      Resource Requirements & Message
+                      Project Specifications & Details
                     </label>
                     <textarea 
                       id="message" 
@@ -581,7 +589,7 @@ export default function Home() {
                       onChange={handleInputChange}
                       rows="4"
                       className="w-full bg-navy-dark border border-slate-800 focus:border-gold outline-none px-4 py-3 text-sm text-white transition-colors"
-                      placeholder="Describe what trades, counts, and project timelines you require..."
+                      placeholder="Describe your project scope, civil/mechanical engineering requirements, and timeline..."
                     />
                   </div>
 

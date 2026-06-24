@@ -53,7 +53,7 @@ export default function Services() {
             Expert Personnel Solutions
           </span>
           <h1 className="font-barlow font-black text-4xl sm:text-5xl md:text-6xl text-white uppercase tracking-tight mt-3">
-            Our Manpower Services
+            Our Contracting Services
           </h1>
           <div className="w-12 h-1 bg-gold mx-auto mt-6" />
         </div>
@@ -95,7 +95,7 @@ export default function Services() {
                       <IconComponent size={24} />
                     </div>
                     <h3 className="font-barlow font-black text-3xl text-white uppercase tracking-wider">
-                      {category.title} Manpower
+                      {category.title} Contracting
                     </h3>
                     <p className="text-xs text-slate-400 leading-relaxed">
                       {category.description}
@@ -197,7 +197,7 @@ export default function Services() {
       </section>
 
       {/* GOLD CTA STRIP */}
-      <section className="bg-gradient-to-r from-gold via-gold-light to-gold text-navy py-12 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-gold via-gold-light to-gold text-slate-950 py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
@@ -218,7 +218,7 @@ export default function Services() {
             </Link>
             <Link 
               to="/gallery" 
-              className="bg-transparent hover:bg-navy/10 text-navy font-black text-xs uppercase tracking-wider px-6 py-4 text-center rounded-sm border border-navy/50 transition-colors"
+              className="bg-transparent hover:bg-slate-950/10 text-slate-950 font-black text-xs uppercase tracking-wider px-6 py-4 text-center rounded-sm border border-slate-950/30 transition-colors"
             >
               Browse Gallery
             </Link>

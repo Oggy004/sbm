@@ -73,7 +73,7 @@ export default function Contact() {
                   <span>Reach Out</span>
                 </span>
                 <h2 className="font-barlow font-black text-3xl sm:text-4xl text-white uppercase tracking-tight">
-                  Let's Discuss Your Manpower Needs
+                  Let's Discuss Your Project Goals
                 </h2>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   Have questions about our selection criteria, mobilization times, or labor pricing? Drop us a line, or contact our support team directly.
@@ -271,7 +271,7 @@ export default function Contact() {
 
                   <div>
                     <label htmlFor="message" className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
-                      Inquiry Details & Workforce Specifications *
+                      Inquiry Details & Project Specifications *
                     </label>
                     <textarea 
                       id="message" 
@@ -280,7 +280,7 @@ export default function Contact() {
                       onChange={handleInputChange}
                       rows="5"
                       className="w-full bg-navy border border-slate-800 focus:border-gold outline-none px-4 py-3 text-sm text-white transition-colors"
-                      placeholder="Specify required trades, approximate mobilization timelines, and locations..."
+                      placeholder="Specify required project scope, approximate timelines, and locations..."
                       required
                     />
                   </div>

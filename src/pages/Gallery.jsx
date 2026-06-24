@@ -74,7 +74,7 @@ export default function Gallery() {
                 }}
                 className={`px-5 py-2.5 text-xs font-bold uppercase tracking-widest transition-all duration-300 border ${
                   activeFilter === filter.value
-                    ? 'bg-gold border-gold text-navy'
+                    ? 'bg-gold border-gold text-slate-950'
                     : 'bg-transparent border-slate-800 text-slate-300 hover:border-gold hover:text-gold'
                 }`}
               >
@@ -134,7 +134,7 @@ export default function Gallery() {
       </section>
 
       {/* CTA STRIP */}
-      <section className="bg-gradient-to-r from-gold via-gold-light to-gold text-navy py-12 relative overflow-hidden">
+      <section className="bg-gradient-to-r from-gold via-gold-light to-gold text-slate-950 py-12 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
@@ -155,7 +155,7 @@ export default function Gallery() {
             </Link>
             <Link 
               to="/services" 
-              className="bg-transparent hover:bg-navy/10 text-navy font-black text-xs uppercase tracking-wider px-6 py-4 text-center rounded-sm border border-navy/50 transition-colors"
+              className="bg-transparent hover:bg-slate-950/10 text-slate-950 font-black text-xs uppercase tracking-wider px-6 py-4 text-center rounded-sm border border-slate-950/30 transition-colors"
             >
               Our Services
             </Link>

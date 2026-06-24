@@ -7,6 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  useEffect(() => {
+    document.documentElement.classList.remove('light');
+    localStorage.removeItem('theme');
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +51,7 @@ export default function Navbar() {
             <img 
               src="/logo.png" 
               alt="SBM Contracting" 
-              className="h-10 w-auto object-contain bg-white p-1 rounded-sm border border-gold/20 group-hover:border-gold transition-colors duration-300"
+              className="h-10 w-auto object-contain bg-[#ffffff] p-1 rounded-sm border border-gold/20 group-hover:border-gold transition-colors duration-300"
             />
             <div className="flex flex-col">
               <span className="font-barlow font-extrabold text-xl tracking-wider text-white leading-tight uppercase group-hover:text-gold transition-colors duration-300">
@@ -74,6 +78,7 @@ export default function Navbar() {
                 {link.name}
               </NavLink>
             ))}
+
           </div>
 
           {/* Call CTA Button */}

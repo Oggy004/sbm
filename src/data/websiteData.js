@@ -1,10 +1,16 @@
 // SBM Contracting Company Website Data
+import buildingConstImg from '../assets/bulding constraction work.jpeg';
+import clientsImg from '../assets/clients.jpeg';
+import fireFightingImg from '../assets/fire fighting work project.jpeg';
+import fireFighting2Img from '../assets/fire fighting work project2.jpeg';
+import workingSiteImg from '../assets/working site.jpeg';
+import electricalWorkImg from '../assets/electrical work.jpeg';
 
 export const workforceCategories = [
   {
     id: "construction",
     title: "Construction",
-    description: "Vetted Indian civil and structural manpower deployed to major infrastructure developments globally.",
+    description: "Vetted Indian civil and structural contracting teams deployed to major infrastructure developments globally.",
     icon: "HardHat",
     trades: [
       { name: "Builder", skills: ["Brickwork", "Concreting", "Plastering"], certs: ["OSHA 10", "Civil Construction Level 2"] },
@@ -51,12 +57,12 @@ export const industriesSupported = [
   {
     title: "Global Construction Projects",
     description: "Commercial structural works, concrete framing, and scaffolding for major international contractors.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
+    image: buildingConstImg
   },
   {
     title: "International Infrastructure",
     description: "Mega-scale road networks, bridge building, subways, and airport terminals worldwide.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
+    image: workingSiteImg
   },
   {
     title: "Overseas Manufacturing Plants",
@@ -76,7 +82,7 @@ export const industriesSupported = [
   {
     title: "Maintenance & Shutdowns",
     description: "Annual maintenance turnarounds, electrical upgrades, and HSE safety reviews for global plants.",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
+    image: fireFighting2Img
   }
 ];
 
@@ -95,7 +101,7 @@ export const whyChooseUs = [
   },
   {
     title: "Compliant Placement",
-    desc: "100% adherence to Ministry of External Affairs (India) labor laws and host country manpower regulations."
+    desc: "100% adherence to Ministry of External Affairs (India) labor laws and host country contracting regulations."
   }
 ];
 
@@ -116,25 +122,25 @@ export const galleryItems = [
     id: 3,
     title: "Commercial Concrete Pouring",
     category: "construction",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+    image: buildingConstImg
   },
   {
     id: 4,
     title: "HSE Drill and Rescue",
     category: "safety",
-    image: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80"
+    image: fireFightingImg
   },
   {
     id: 5,
     title: "Pipeline Fitting Operations",
     category: "mechanical",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+    image: electricalWorkImg
   },
   {
     id: 6,
     title: "Foundation Formwork Setup",
     category: "construction",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
+    image: workingSiteImg
   },
   {
     id: 7,

@@ -2,13 +2,54 @@
 
 @import "tailwindcss";
 
+:root {
+  --bg-navy: #0F172A;
+  --bg-navy-dark: #020617;
+  --bg-navy-light: #1E293B;
+  --text-white: #FFFFFF;
+  --text-slate-100: #F1F5F9;
+  --text-slate-200: #E2E8F0;
+  --text-slate-300: #CBD5E1;
+  --text-slate-400: #94A3B8;
+  --text-slate-500: #64748B;
+  --border-color: #1E293B;
+  --accent-gold: #F59E0B;
+  --accent-gold-dark: #D97706;
+  --accent-gold-light: #FBBF24;
+  --scrollbar-thumb: #1E293B;
+}
+
+html.light {
+  --bg-navy: #F8FAFC;
+  --bg-navy-dark: #FFFFFF;
+  --bg-navy-light: #F1F5F9;
+  --text-white: #020617;
+  --text-slate-100: #1E293B;
+  --text-slate-200: #334155;
+  --text-slate-300: #475569;
+  --text-slate-400: #64748B;
+  --text-slate-500: #94A3B8;
+  --border-color: #E2E8F0;
+  --accent-gold: #D97706;
+  --accent-gold-dark: #B45309;
+  --accent-gold-light: #F59E0B;
+  --scrollbar-thumb: #CBD5E1;
+}
+
 @theme {
-  --color-navy: #0F172A;
-  --color-navy-dark: #020617;
-  --color-navy-light: #1E293B;
-  --color-gold: #F59E0B;
-  --color-gold-dark: #D97706;
-  --color-gold-light: #FBBF24;
+  --color-navy: var(--bg-navy);
+  --color-navy-dark: var(--bg-navy-dark);
+  --color-navy-light: var(--bg-navy-light);
+  --color-white: var(--text-white);
+  --color-slate-100: var(--text-slate-100);
+  --color-slate-200: var(--text-slate-200);
+  --color-slate-300: var(--text-slate-300);
+  --color-slate-400: var(--text-slate-400);
+  --color-slate-500: var(--text-slate-500);
+  --color-slate-800: var(--border-color);
+  --color-gold: var(--accent-gold);
+  --color-gold-dark: var(--accent-gold-dark);
+  --color-gold-light: var(--accent-gold-light);
   --font-barlow: "Barlow Condensed", sans-serif;
   --font-dmsans: "DM Sans", sans-serif;
 }
@@ -17,15 +58,16 @@
 html {
   scroll-behavior: smooth;
   font-family: "DM Sans", system-ui, -apple-system, sans-serif;
-  background-color: #0F172A;
-  color: #F8FAFC;
+  background-color: var(--bg-navy);
+  color: var(--text-slate-300);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #0F172A;
+  background-color: var(--bg-navy);
 }
 
 /* Custom premium scrollbar */
@@ -33,14 +75,14 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0F172A;
+  background: var(--bg-navy);
 }
 ::-webkit-scrollbar-thumb {
-  background: #1E293B;
+  background: var(--scrollbar-thumb);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #F59E0B;
+  background: var(--accent-gold);
 }
 
 /* Custom utility definitions if any */

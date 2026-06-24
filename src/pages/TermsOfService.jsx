@@ -26,7 +26,7 @@ export default function TermsOfService() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing this website or utilizing the recruitment and mobilization services of SBM Contracting Company ("SBM," "we," "us"), you agree to abide by these Terms of Service. These terms apply to all visitors, job candidates, clients, and partners.
+              By accessing this website or utilizing the industrial contracting and engineering mobilization services of SBM Contracting Company ("SBM," "we," "us"), you agree to abide by these Terms of Service. These terms apply to all visitors, technicians, clients, and partners.
             </p>
           </div>
 
@@ -35,10 +35,10 @@ export default function TermsOfService() {
               2. Scope of Services
             </h2>
             <p>
-              SBM operates as a skilled manpower contractor and recruitment agent based in Noida, India. We source, trade-test, and mobilize workers for overseas placements. Key clauses regarding our services include:
+              SBM operates as a certified project contracting and engineering support firm based in Noida, India. We execute civil construction, mechanical fit-out, and industrial electrical projects for global clients. Key clauses regarding our services include:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Candidate Submissions:</strong> Vetting checks are conducted in good faith. However, SBM does not warrant that every candidate will secure an overseas visa or meet the client's localized productivity expectations indefinitely.</li>
+              <li><strong>Project Mobilization:</strong> Vetting checks are conducted in good faith. However, SBM does not warrant that every engineering crew member will secure an overseas visa or meet the client's localized productivity expectations indefinitely.</li>
               <li><strong>Regulatory Compliance:</strong> All deployments are subject to clear medical screenings, ECNR status validation, and approval of the Indian Protector of Emigrants (PoE) desk.</li>
               <li><strong>Project Logistics:</strong> Delivery timelines are estimates and can be influenced by host country consular schedules, visa issuance delays, or flight availabilities.</li>
             </ul>
@@ -49,7 +49,7 @@ export default function TermsOfService() {
               3. Obligations of Candidates
             </h2>
             <p>
-              Candidates applying through our portal or physical Noida office must:
+              Technicians applying through our portal or physical Noida office must:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Submit accurate educational, work history, and credential files. Submission of fake welding, electrical, or structural clearances will result in immediate disqualification.</li>
@@ -63,7 +63,7 @@ export default function TermsOfService() {
               4. Client Partnerships & Agreements
             </h2>
             <p>
-              International contracting firms partnering with SBM agree that all recruitment billing terms, standby worker replacements, and payment structures are governed by specific bipartite Service Level Agreements (SLAs) executed directly between SBM corporate and the client.
+              International contracting firms partnering with SBM agree that all project billing terms, standby crew replacements, and payment structures are governed by specific bipartite Service Level Agreements (SLAs) executed directly between SBM corporate and the client.
             </p>
           </div>
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import { ShieldCheck, Award, Briefcase, Users, Users2 } from 'lucide-react';
 import { companyHighlights } from '../data/websiteData';
+import clientsImg from '../assets/clients.jpeg';
 
 export default function About() {
   const values = [
     {
-      title: "Skilled Workforce",
+      title: "Skilled Teams",
       icon: Users,
-      desc: "Our trade assessments are designed to select only candidates with the technical capacity and experience to deliver high-quality outcomes."
+      desc: "Our trade assessments are designed to select only teams with the technical capacity and experience to deliver high-quality outcomes."
     },
     {
       title: "Professional Management",
@@ -33,7 +34,7 @@ export default function About() {
       <section className="relative py-20 bg-navy-dark border-b border-slate-900">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80')` }}
+          style={{ backgroundImage: `url(${clientsImg})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy-dark/90 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
@@ -61,13 +62,13 @@ export default function About() {
                 A Legacy of Support and Technical Excellence
               </h2>
               <p className="text-slate-300 text-sm leading-relaxed">
-                SBM Contracting Company was established to solve a critical bottleneck in the global engineering and construction sectors: the availability of verified, certified, and reliable skilled labor from India. Over the past decade, we have grown into a leading overseas recruitment and deployment partner, mobilizing Indian tradesmen to high-budget international developments and industrial maintenance projects.
+                SBM Contracting Company was established to solve a critical bottleneck in the global engineering and construction sectors: the availability of verified, certified, and reliable contracting execution teams. Over the past decade, we have grown into a leading project contracting and engineering support partner, delivering services to high-budget international developments and industrial maintenance projects. We have successfully worked with many big companies in Dubai, supporting their complex engineering and structural contracting needs.
               </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                We believe that qualified human capital is the foundation of any iconic structure or manufacturing success. By managing the entire recruitment cycle in India—including physical trade testing, MEA certifications, medical checkups, ECNR visa clearances, and logistical travel—we deliver compliant, turnkey staffing solutions that integrate smoothly into our client's on-site routines.
+                We believe that qualified engineering execution is the foundation of any iconic structure or manufacturing success. By managing the entire project mobilization cycle—including physical capabilities testing, certifications, compliance checkups, visa clearances, and logistics—we deliver compliant, turnkey contracting solutions that integrate smoothly into our client's on-site routines.
               </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Whether mobilizing construction builders for structural works, mechanical pipe fitters for petrochemical refinery shutdowns in the Gulf, or safety inspectors for safety audits in industrial facilities, SBM guarantees quality and MEA compliance at every milestone.
+                Whether executing construction works, mechanical piping installations for petrochemical refinery shutdowns, or safety audits in industrial facilities, SBM guarantees quality and compliance at every milestone.
               </p>
             </div>
 
@@ -82,9 +83,9 @@ export default function About() {
               
               <div className="bg-navy-dark p-8 border border-slate-800 space-y-3">
                 <h4 className="font-barlow font-black text-4xl text-gold">500+</h4>
-                <h5 className="text-white font-bold text-xs uppercase tracking-wider">Mobilized Crew</h5>
+                <h5 className="text-white font-bold text-xs uppercase tracking-wider">Project Deliveries</h5>
                 <p className="text-[11px] text-slate-400 leading-relaxed">
-                  Certified mechanics, civil builders, industrial technicians, and HSE inspectors.
+                  Infrastructure builds, plant maintenance, and engineering services.
                 </p>
               </div>
 
@@ -119,10 +120,10 @@ export default function About() {
                 Our Mission //
               </span>
               <h3 className="font-barlow font-bold text-2xl text-white uppercase tracking-wide">
-                Empowering Projects Through Skilled Manpower
+                Empowering Projects Through Skilled Contracting
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                To bridge the technical talent gap by deploying rigorously vetted, safety-conscious, and highly skilled professionals who support project managers in maintaining execution speed, strict safety codes, and cost efficacy.
+                To deliver outstanding project outcomes by deploying rigorously tested, safety-conscious, and highly skilled contracting teams who maintain execution speed, strict safety codes, and cost efficacy.
               </p>
             </div>
 
@@ -131,10 +132,10 @@ export default function About() {
                 Our Vision //
               </span>
               <h3 className="font-barlow font-bold text-2xl text-white uppercase tracking-wide">
-                The Preferred Workforce Partner
+                The Preferred Contracting Partner
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed">
-                To be recognized globally as the most reliable, compliant, and professional contractor for technical manpower, setting benchmarks in labor welfare, safety protocols, and operational management.
+                To be recognized globally as the most reliable, compliant, and professional contractor for industrial projects, setting benchmarks in project execution, safety protocols, and operational management.
               </p>
             </div>
 
@@ -203,9 +204,9 @@ export default function About() {
             
             <div className="w-full lg:w-auto flex-shrink-0 flex flex-col items-center p-8 bg-navy-dark border border-slate-800 text-center">
               <Users2 size={48} className="text-gold mb-4" />
-              <h4 className="text-white font-bold text-sm uppercase tracking-wide">HSE Trained Workforce</h4>
+              <h4 className="text-white font-bold text-sm uppercase tracking-wide">HSE Trained Contracting Crew</h4>
               <p className="text-[11px] text-slate-500 max-w-[200px] mt-1 mb-4">
-                All personnel receive custom PPE and safety gear orientation.
+                All personnel receive custom safety gear orientation.
               </p>
               <span className="font-barlow text-2xl font-black text-white">100% CERTIFIED</span>
             </div>

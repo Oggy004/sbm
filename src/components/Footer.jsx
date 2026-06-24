@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed">
-              Trusted provider of skilled manpower and professional staffing solutions for construction, mechanical, electrical, and safety sectors globally.
+              Trusted industrial contracting and engineering support company executing projects across civil, structural, mechanical, electrical, and safety sectors globally.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="text-slate-500 hover:text-gold transition-colors duration-300" aria-label="Facebook">
@@ -92,7 +92,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <Link to="/services" className="hover:text-gold transition-colors duration-300">
-                  Construction Manpower
+                  Construction Contracting
                 </Link>
               </li>
               <li>
