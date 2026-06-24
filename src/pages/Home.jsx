@@ -75,57 +75,37 @@ export default function Home() {
     <div className="pt-20">
       
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] flex items-center bg-navy-dark overflow-hidden">
+      <section className="relative min-h-[95vh] flex items-center justify-center bg-navy-dark overflow-hidden">
         {/* Background Image Overlay */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25 scale-105 transition-transform duration-[10000ms] ease-out hover:scale-100"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80')` }}
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60 scale-100 transition-transform duration-[10000ms] ease-out hover:scale-105"
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&q=80')` }}
         />
-        {/* Dark Navy Overlay Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-navy-dark/40" />
+        {/* Dark Overlay for high readability */}
+        <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 z-10 w-full">
-          <div className="max-w-3xl">
-            {/* Gold Accent Bar */}
-            <div className="w-16 h-1 bg-gold mb-6 animate-pulse" />
-            
-            <h1 className="font-barlow font-black text-5xl sm:text-6xl md:text-7xl text-white tracking-tight uppercase leading-none mb-6">
-              Connecting Skilled <span className="text-gold">Indian Workforce</span> With Global Projects
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 z-10 w-full flex flex-col items-center justify-center text-center">
+          <div className="max-w-4xl space-y-6">
+            <h1 className="font-dmsans font-extrabold text-5xl sm:text-6xl md:text-7xl text-white tracking-wider uppercase leading-tight select-none">
+              SBM CONTRACTING
             </h1>
             
-            <p className="text-lg sm:text-xl text-slate-300 font-dmsans max-w-2xl mb-10 leading-relaxed">
-              SBM Contracting Company is Noida's premier overseas placement agency, recruiting certified technical manpower from India and deploying them to infrastructure, oil & gas, and industrial projects worldwide.
+            <h2 className="font-dmsans font-bold text-2xl sm:text-3xl md:text-4xl text-white tracking-widest uppercase opacity-95">
+              SKILLED MANPOWER SOLUTIONS
+            </h2>
+            
+            <p className="text-base sm:text-lg text-white font-dmsans tracking-wide max-w-2xl mx-auto opacity-90">
+              Delivering Workforce Solutions—Anytime, Anywhere
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="pt-8 flex justify-center">
               <Link 
                 to="/contact" 
-                className="bg-gold hover:bg-gold-light text-navy font-black text-sm uppercase tracking-wider px-8 py-4 rounded-sm transition-all duration-300 flex items-center justify-center space-x-2 border border-gold/60 shadow-lg shadow-gold/10 hover:shadow-gold/20"
+                className="bg-[#d97736] hover:bg-[#c25e22] text-white font-semibold text-base px-10 py-3.5 rounded-full transition-all duration-300 shadow-lg hover:shadow-orange-500/20 transform hover:-translate-y-0.5 inline-block"
               >
-                <span>Partner With Us</span>
-                <ArrowRight size={16} />
-              </Link>
-              <Link 
-                to="/services" 
-                className="bg-transparent hover:bg-white/5 text-white font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-sm border border-slate-700 hover:border-gold transition-all duration-300 flex items-center justify-center"
-              >
-                Explore Services
+                Contact Us
               </Link>
             </div>
-          </div>
-          
-          {/* Quick Stats Overlay (Floating on desktop) */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 border-t border-white/10 pt-10">
-            {companyHighlights.map((stat, idx) => (
-              <div key={idx} className="border-l border-gold/30 pl-4">
-                <p className="font-barlow font-black text-4xl text-gold">
-                  <AnimatedCounter targetValue={stat.value} suffix={stat.suffix} />
-                </p>
-                <p className="text-xs uppercase tracking-widest text-slate-400 font-bold mt-1">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -429,22 +409,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <p className="font-barlow font-black text-5xl sm:text-6xl mb-2">500+</p>
-              <p className="text-xs font-black uppercase tracking-widest opacity-80">Workers Mobilized</p>
-            </div>
-            <div>
-              <p className="font-barlow font-black text-5xl sm:text-6xl mb-2">50+</p>
-              <p className="text-xs font-black uppercase tracking-widest opacity-80">Projects Assisted</p>
-            </div>
-            <div>
-              <p className="font-barlow font-black text-5xl sm:text-6xl mb-2">10+</p>
-              <p className="text-xs font-black uppercase tracking-widest opacity-80">Trades Available</p>
-            </div>
-            <div>
-              <p className="font-barlow font-black text-5xl sm:text-6xl mb-2">100%</p>
-              <p className="text-xs font-black uppercase tracking-widest opacity-80">Professional Service</p>
-            </div>
+            {companyHighlights.map((stat, idx) => (
+              <div key={idx}>
+                <p className="font-barlow font-black text-5xl sm:text-6xl mb-2">
+                  <AnimatedCounter targetValue={stat.value} suffix={stat.suffix} />
+                </p>
+                <p className="text-xs font-black uppercase tracking-widest opacity-80">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
