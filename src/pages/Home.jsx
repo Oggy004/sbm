@@ -117,11 +117,11 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
             <div className="lg:col-span-6 relative">
-              <div className="aspect-[4/3] bg-navy-light rounded-sm overflow-hidden border border-slate-800">
+              <div className="aspect-[4/3] bg-white rounded-sm overflow-hidden border border-slate-800 flex items-center justify-center p-12">
                 <img 
-                  src={clientsImg} 
-                  alt="SBM Construction Project" 
-                  className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-all duration-700"
+                  src="/logo.png" 
+                  alt="SBM Contracting Logo" 
+                  className="max-w-[80%] max-h-[80%] object-contain opacity-95 hover:opacity-100 hover:scale-105 transition-all duration-500 ease-out"
                 />
               </div>
               
@@ -134,17 +134,10 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-6 space-y-6">
-              <div className="flex items-center space-x-3">
-                <img 
-                  src="/logo.png" 
-                  alt="SBM Logo" 
-                  className="h-8 w-auto object-contain bg-white p-1 rounded-sm border border-gold/20"
-                />
-                <span className="text-gold text-xs font-black uppercase tracking-widest flex items-center space-x-2">
-                  <span className="w-6 h-[1px] bg-gold" />
-                  <span>Who We Are</span>
-                </span>
-              </div>
+              <span className="text-gold text-xs font-black uppercase tracking-widest flex items-center space-x-2">
+                <span className="w-6 h-[1px] bg-gold" />
+                <span>Who We Are</span>
+              </span>
               <h2 className="font-barlow font-black text-4xl sm:text-5xl text-white uppercase tracking-tight leading-none">
                 Delivering Reliable & Skilled Contracting Solutions
               </h2>
