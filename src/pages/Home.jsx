@@ -134,10 +134,17 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-gold text-xs font-black uppercase tracking-widest flex items-center space-x-2">
-                <span className="w-6 h-[1px] bg-gold" />
-                <span>Who We Are</span>
-              </span>
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/logo.png" 
+                  alt="SBM Logo" 
+                  className="h-8 w-auto object-contain bg-white p-1 rounded-sm border border-gold/20"
+                />
+                <span className="text-gold text-xs font-black uppercase tracking-widest flex items-center space-x-2">
+                  <span className="w-6 h-[1px] bg-gold" />
+                  <span>Who We Are</span>
+                </span>
+              </div>
               <h2 className="font-barlow font-black text-4xl sm:text-5xl text-white uppercase tracking-tight leading-none">
                 Delivering Reliable & Skilled Contracting Solutions
               </h2>
