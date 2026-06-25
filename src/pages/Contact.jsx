@@ -307,14 +307,14 @@ export default function Contact() {
               Our Location
             </h3>
             <p className="text-xs text-slate-500 mt-1">
-              Visit our headquarters in Noida, Uttar Pradesh, India.
+              Visit our office in Ajman, UAE.
             </p>
           </div>
           
           <div className="relative border border-gold/20 h-[400px] bg-navy overflow-hidden">
             {/* Styled Iframe Map or Placeholder */}
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4332997194605!2d77.36214531508269!3d28.616788582424075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55ed3e2bf57%3A0xe543e33f39a7516!2sSector%2062%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1655979500000!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115348.23616616086!2d55.39414902341908!3d25.38356976648793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f3a09e0ffff%3A0xe6bf44b4b2cb5d2a!2sAjman%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
               className="absolute inset-0 w-full h-full border-0 opacity-90"
               allowFullScreen="" 
               loading="lazy" 

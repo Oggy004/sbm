@@ -573,7 +573,7 @@ export default function Home() {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full bg-navy-dark border border-slate-800 focus:border-gold outline-none px-4 py-3 text-sm text-white transition-colors"
-                      placeholder="e.g. +91 98765 XXXXX"
+                      placeholder="e.g. +971 56 XXXXXXX"
                       required
                     />
                   </div>

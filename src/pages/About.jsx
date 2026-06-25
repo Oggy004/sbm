@@ -77,7 +77,7 @@ export default function About() {
                 <h4 className="font-barlow font-black text-4xl text-gold">10+</h4>
                 <h5 className="text-white font-bold text-xs uppercase tracking-wider">Years Active</h5>
                 <p className="text-[11px] text-slate-400 leading-relaxed">
-                  Established in Noida, supporting infrastructure across national and regional project regions.
+                  Established in Ajman, supporting infrastructure across national and regional project regions.
                 </p>
               </div>
               

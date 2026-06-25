@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
               1. Introduction
             </h2>
             <p>
-              SBM Contracting Company ("we," "us," or "our") operates from Sector 62, Noida, Uttar Pradesh. We are committed to protecting the privacy of candidates, clients, and visitors. This Privacy Policy details how we collect, process, share, and protect personal and professional data in compliance with the Ministry of External Affairs (India) guidelines and global data protection standards.
+              SBM Contracting Company ("we," "us," or "our") operates from Ajman, UAE. We are committed to protecting the privacy of candidates, clients, and visitors. This Privacy Policy details how we collect, process, share, and protect personal and professional data in compliance with the relevant guidelines and global data protection standards.
             </p>
           </div>
 
@@ -91,9 +91,9 @@ export default function PrivacyPolicy() {
             </p>
             <div className="border border-slate-800 p-6 bg-navy-dark mt-4 text-xs">
               <p className="font-semibold text-white">SBM Contracting Company (Data Desk)</p>
-              <p className="mt-1">Sector 62, Noida, Uttar Pradesh 201301</p>
-              <p>Email: info@sbmcontracting.com</p>
-              <p>Phone: +91 98765 43210</p>
+              <p className="mt-1">Ajman, UAE</p>
+              <p>Email: sumithend02@gmail.com</p>
+              <p>Phone: +971 56 174 0122</p>
             </div>
           </div>
 

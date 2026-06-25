@@ -35,7 +35,7 @@ export default function TermsOfService() {
               2. Scope of Services
             </h2>
             <p>
-              SBM operates as a certified project contracting and engineering support firm based in Noida, India. We execute civil construction, mechanical fit-out, and industrial electrical projects for global clients. Key clauses regarding our services include:
+              SBM operates as a certified project contracting and engineering support firm based in Ajman, UAE. We execute civil construction, mechanical fit-out, and industrial electrical projects for global clients. Key clauses regarding our services include:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Project Mobilization:</strong> Vetting checks are conducted in good faith. However, SBM does not warrant that every engineering crew member will secure an overseas visa or meet the client's localized productivity expectations indefinitely.</li>
@@ -49,7 +49,7 @@ export default function TermsOfService() {
               3. Obligations of Candidates
             </h2>
             <p>
-              Technicians applying through our portal or physical Noida office must:
+              Technicians applying through our portal or physical office must:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Submit accurate educational, work history, and credential files. Submission of fake welding, electrical, or structural clearances will result in immediate disqualification.</li>
@@ -81,7 +81,7 @@ export default function TermsOfService() {
               6. Governing Law & Jurisdiction
             </h2>
             <p>
-              These Terms of Service are governed by and construed in accordance with the laws of India, including the Emigration Act 1983. Any disputes arising out of these terms shall fall under the exclusive jurisdiction of the competent courts in Noida, Uttar Pradesh, India.
+              These Terms of Service are governed by and construed in accordance with the laws of the United Arab Emirates. Any disputes arising out of these terms shall fall under the exclusive jurisdiction of the competent courts in Ajman, United Arab Emirates.
             </p>
           </div>
 

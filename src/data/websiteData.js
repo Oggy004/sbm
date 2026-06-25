@@ -93,7 +93,7 @@ export const whyChooseUs = [
   },
   {
     title: "End-to-End Mobilization",
-    desc: "Our Noida-based team manages visas, emigrations (ECNR), flights, medical clearances, and deployment logistics."
+    desc: "Our UAE-based team manages visas, flights, medical clearances, and deployment logistics."
   },
   {
     title: "Global Certifications",
@@ -164,12 +164,12 @@ export const companyHighlights = [
 ];
 
 export const contactDetails = {
-  phone: "+91 98765 43210",
-  email: "info@sbmcontracting.com",
-  whatsapp: "+91 98765 43210",
+  phone: "+971 56 174 0122",
+  email: "sumithend02@gmail.com",
+  whatsapp: "+971 56 174 0122",
   officeHours: [
     { days: "Monday - Saturday", hours: "9:00 AM - 6:00 PM" },
     { days: "Sunday", hours: "Closed" }
   ],
-  address: "SBM Plaza, Sector 62, Noida, Uttar Pradesh 201301"
+  address: "Ajman, UAE"
 };
